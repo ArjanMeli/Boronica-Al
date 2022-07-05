@@ -35,6 +35,8 @@
         top:10px;
 }
 
+
+
 .face1{
 
     position: relative;
@@ -182,6 +184,10 @@ a{
     right: 9%;
     top:3rem;
     margin-right: 2rem;
+    color: black;
+    font-size: 1.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
     
 
 
@@ -201,6 +207,13 @@ color: white;
 .home a:hover{
 
     
+    text-decoration: underline;
+    text-decoration-color: rgb(26, 145, 145);
+    text-decoration-thickness: 0.5rem;
+}
+
+.home:hover{
+
     text-decoration: underline;
     text-decoration-color: rgb(26, 145, 145);
     text-decoration-thickness: 0.5rem;
@@ -1035,6 +1048,11 @@ h2{
 
 @media screen and (max-width:365px) and (min-width:300px){
 
+
+    
+
+   
+
     .home a{
 
         font-size: 0.6rem;
@@ -1112,6 +1130,8 @@ h2{
 
 
 @media screen and (max-width:430px)and (min-width:420px){
+
+    
 
    
 .logo{
@@ -1578,6 +1598,47 @@ left: 42%;
 }
 
 }
+
+
+
+
+.galeri-div{
+
+    width: 100%;
+    min-height: 50rem;
+    background-image: url(./img/img6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    top: 12.5rem;
+    display:block;
+}
+
+
+.small-divgaleri{
+
+    max-width: 20rem;
+   height: 20rem;
+    background-color: rgb(18, 57, 45);
+    border-radius: 100%;
+    margin: 1.7rem;
+    opacity: 0.9;
+    float: left;
+    
+}
+
+
+.foto7{
+
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
 
 
 
