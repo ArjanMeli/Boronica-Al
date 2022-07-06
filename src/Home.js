@@ -256,7 +256,7 @@ function Home() {
  
  
  <p class="home5"><Link to='/'>HOME</Link></p>
- <p class="home5"><a href="#">PRODUKTET</a></p>
+ <p class="home5"><Link to='/produktet'>PRODUKTET</Link></p>
  <p class="home5"><Link to='/galeri'>GALERI</Link></p>
  <p class="home5"><a href="#">TE REJAT</a></p>
  <p class="home5"><a href="#poshte">KONTAKT</a></p>
