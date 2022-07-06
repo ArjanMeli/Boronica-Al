@@ -78,8 +78,8 @@ function Home() {
      <p class="home"><a href="#poshte">KONTAKT</a></p>
      <p class="home"><a href='#'>TE REJAT</a></p>
      <p class="home"><Link to='/galeri'>GALERI</Link></p>
-     <p class="home"><a href="#">PRODUKTET</a></p>
-     <p class="home"><a href="#">HOME</a></p>
+     <p class="home"><Link to='/produktet'>PRODUKTET</Link></p>
+     <p class="home"><Link to='/'>HOME</Link></p>
  
      
  
@@ -191,8 +191,8 @@ function Home() {
  
  <p class="home1"><a href="#poshte">KONTAKT</a></p>
  <p class="home1"><a href="#">TE REJAT</a></p>
- <p class="home1"><a href='#'>GALERI</a></p>
- <p class="home1"><a href="#">HOME</a></p>
+ <p class="home1"><Link to='/galeri'>GALERI</Link></p>
+ <p class="home1"><Link to='/'>HOME</Link></p>
  
  
  
@@ -255,9 +255,9 @@ function Home() {
  
  
  
- <p class="home5"><a href="#">HOME</a></p>
+ <p class="home5"><Link to='/'>HOME</Link></p>
  <p class="home5"><a href="#">PRODUKTET</a></p>
- <p class="home5"><a href="#">GALERI</a></p>
+ <p class="home5"><Link to='/galeri'>GALERI</Link></p>
  <p class="home5"><a href="#">TE REJAT</a></p>
  <p class="home5"><a href="#poshte">KONTAKT</a></p>
  

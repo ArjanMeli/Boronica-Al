@@ -14,6 +14,9 @@ import img15 from './img/img15.jpg';
 import img16 from './img/img16.jpg';
 import img18 from './img/img18.jpg';
 import img19 from './img/img19.jpg';
+import img21 from './img/img21.jpg';
+import img22 from './img/img22.jpg';
+import img23 from './img/img23.jpg';
 
 
 
@@ -78,7 +81,7 @@ function Galeri(){
      <p class="home"><a href="#poshte">KONTAKT</a></p>
      <p class="home"><a href='#'>TE REJAT</a></p>
      <p class="home"><Link to='/galeri'>GALERI</Link></p>
-     <p class="home"><a href="#">PRODUKTET</a></p>
+     <p class="home"><Link to='/produktet'>PRODUKTET</Link></p>
      <p class="home"><Link to='/'>HOME</Link></p>
  
      
@@ -104,6 +107,10 @@ function Galeri(){
  
  
    </div>
+
+
+
+
 
    <div class="galeri-div">
 
@@ -179,6 +186,24 @@ function Galeri(){
     <div class="small-divgaleri">
 
     <img src={img19} alt="the" class="foto7"></img>
+
+    </div>
+
+    <div class="small-divgaleri">
+
+    <img src={img21} alt="the" class="foto7"></img>
+
+    </div>
+
+    <div class="small-divgaleri">
+
+    <img src={img22} alt="the" class="foto7"></img>
+
+    </div>
+
+    <div class="small-divgaleri">
+
+    <img src={img23} alt="the" class="foto7"></img>
 
     </div>
 

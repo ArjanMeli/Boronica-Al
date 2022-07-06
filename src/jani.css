@@ -1651,6 +1651,77 @@ left: 42%;
 
 
 
+.background-foto{
+
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    top: 12.5rem;
+}
+
+.foto8{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.small-otherdivs{
+
+
+    max-width:27rem ;
+    min-height: 20rem;
+    position: relative;
+    top: 40rem;
+    margin: 1rem;
+    float: left;
+    border: 0.5rem green solid;
+    text-align: center;
+}
+
+
+.foto9{
+
+    width: 100%;
+    height: 50%;
+}
+
+
+.container-div{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.manu{
+
+    color: blue;
+}
+
+.manushaqe{
+
+    color: rgb(99, 99, 162);
+}
+
+
+.produktet-in{
+
+    position: absolute;
+    top:34rem;
+    text-align: center;
+    width: 100%;
+}
+
+.pro1{
+
+    color: rgb(7, 55, 7);
+}
+
+
+
 
 
 
