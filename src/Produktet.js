@@ -64,7 +64,7 @@ function Produktet(){
     
  
      <p class="home"><a href="#poshte">KONTAKT</a></p>
-     <p class="home"><a href='#'>TE REJAT</a></p>
+     <p class="home"><Link to='/rejat'>TE REJAT</Link></p>
      <p class="home"><Link to='/galeri'>GALERI</Link></p>
      <p class="home"><a href="#">PRODUKTET</a></p>
      <p class="home"><Link to='/'>HOME</Link></p>

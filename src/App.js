@@ -15,6 +15,7 @@ import Produktet from './Produktet';
 
 
 import './jani.css';
+import Rejat from './Rejat';
 
 
 function App(){
@@ -31,6 +32,8 @@ function App(){
         <Route path='/' element={<Home/>}/>
         <Route path='/galeri' element={<Galeri/>}/>
         <Route path='/produktet' element={<Produktet/>}/>
+        <Route path='/rejat' element={<Rejat/>}/>
+
 
 
       </Routes>
