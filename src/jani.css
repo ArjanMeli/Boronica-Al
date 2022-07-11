@@ -518,7 +518,6 @@ h2{
 @media screen and (max-width:800px){
 
 
-   
     
   
     
@@ -799,6 +798,9 @@ h2{
         
         
     }
+
+    
+   
 
     
 
@@ -1780,6 +1782,86 @@ left: 42%;
     font-size: 2rem;
     
 }
+
+
+.kontaktoo-div{
+
+    width: 100%;
+    max-height:25rem ;
+    position: relative;
+    top: 12.5rem;
+    
+}
+
+
+.ajo-in{
+
+    width: 100%;
+    max-height: 25rem;
+}
+
+
+
+
+.detaje{
+
+    font-size: 1.4rem;
+    color: rgb(8, 66, 8);
+    position: relative;
+    top: 12rem;
+    z-index: 40;
+    text-align: center;
+    
+}
+
+.inputi{
+
+    width: 20rem;
+    height: 2.5rem;
+    margin-top: 0.7rem;
+    position: sticky;
+    
+}
+
+.text-area{
+
+    width: 20rem;
+    height: 10rem;
+    margin-top: 0.7rem;
+    position: relative;
+}
+
+.submit{
+
+    width: 5rem;
+    height: 2.5rem;
+    background-color: rgb(12, 58, 12);
+    color: white;
+    cursor: pointer;
+
+}
+
+.submit:hover{
+
+    background-color: rgb(50, 140, 209);
+}
+
+
+form{
+
+    background-color: rgb(46, 180, 60);
+    position: relative;
+    top: 12rem;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
+  
+}
+
+
+
 
 
 

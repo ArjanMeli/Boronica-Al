@@ -57,7 +57,7 @@ function Rejat(){
     
     
  
-     <p class="home"><a href="#poshte">KONTAKT</a></p>
+    <p class="home"><Link to='/kontakt'>KONTAKT</Link></p>
      <p class="home"><Link to='/rejat'>TE REJAT</Link></p>
      <p class="home"><Link to='/galeri'>GALERI</Link></p>
      <p class="home"><Link to='/produktet'>PRODUKTET</Link></p>

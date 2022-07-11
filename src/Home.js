@@ -75,7 +75,7 @@ function Home() {
     
     
  
-     <p class="home"><a href="#poshte">KONTAKT</a></p>
+    <p class="home"><Link to='/kontakt'>KONTAKT</Link></p>
      <p class="home"><Link to='/rejat'>TE REJAT</Link></p>
      <p class="home"><Link to='/galeri'>GALERI</Link></p>
      <p class="home"><Link to='/produktet'>PRODUKTET</Link></p>
@@ -189,8 +189,8 @@ function Home() {
  
  
  
- <p class="home1"><a href="#poshte">KONTAKT</a></p>
- <p class="home1"><a href="#">TE REJAT</a></p>
+ <p class="home1"><Link to='./kontakt'>KONTAKT</Link></p>
+ <p class="home1"><Link to='.rejat'>TE REJAT</Link></p>
  <p class="home1"><Link to='/galeri'>GALERI</Link></p>
  <p class="home1"><Link to='/'>HOME</Link></p>
  
@@ -258,8 +258,8 @@ function Home() {
  <p class="home5"><Link to='/'>HOME</Link></p>
  <p class="home5"><Link to='/produktet'>PRODUKTET</Link></p>
  <p class="home5"><Link to='/galeri'>GALERI</Link></p>
- <p class="home5"><a href="#">TE REJAT</a></p>
- <p class="home5"><a href="#poshte">KONTAKT</a></p>
+ <p class="home5"><Link to='./rejat'>TE REJAT</Link></p>
+ <p class="home5"><Link to='./kontakt'>KONTAKT</Link></p>
  
  <div class="fb2"><a href="https://www.facebook.com/Boronica.al/" target="_blank"><i class="fa-brands fa-facebook-f face3"></i></a></div>
  
