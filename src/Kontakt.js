@@ -1,15 +1,82 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './jani.css';
 import { Link } from 'react-router-dom';
 import profileImage from './img/img5.jpg';
 import img41 from './img/img41.jpg';
+import { useForm, ValidationError } from '@formspree/react';
+
+
+
+function ContactForm() {
+    const [state, handleSubmit] = useForm("xwkydwdv");
+    if (state.succeeded) {
+        return <form>
+            <p class="thanks">Do ju kontaktojme se shpejti. Faleminderit</p>
+            </form>;
+    };
+
+
+  
+
+
+   
+
+       
+        
+       
+        
+        
+
+
+return(
+
+
+
+<form onSubmit={handleSubmit}>
+
+<input type="text" required name="Name" class="inputi" id='name' placeholder="Name"></input>
+
+<input type="email" required name="email" class="inputi" id='email' placeholder="E-mail"></input>
+
+<ValidationError 
+        prefix="Email" 
+        field="email"
+        errors={state.errors}/>
+
+<input type="tel" required name="telefon" class="inputi" id='phone' placeholder='Telephone'></input>
+
+
+
+
+<textarea name='message'
+ required
+ placeholder='Message' class="text-area" id='service'>
+</textarea> 
+
+<ValidationError 
+        prefix="Message" 
+        field="message"
+        errors={state.errors}
+      />
+ 
+ <input type="submit" class="submit" value="Send"></input>
+ 
+
+</form>
+
+
+
+
+)}
+
+
+
 
 
 
 function Kontakt(){
 
 
-   
 
 
 
@@ -17,6 +84,8 @@ function Kontakt(){
 
 
     return(
+
+
 
 
         <div>
@@ -91,29 +160,13 @@ function Kontakt(){
 
 
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10122.058948355243!2d19.77582271536411!3d41.42871629616982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350329805684967%3A0x60e50a5ac270cf1c!2sTirana%2C%20Albania!5e0!3m2!1sen!2s!4v1657399377897!5m2!1sen!2s"
-      width="100%"  style={{border:"0", position: "relative", top: "12.3rem", minHeight: "25rem"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      title="frame" width="100%"  style={{border:"0", position: "relative", top: "12.3rem", minHeight: "25rem"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
       <p class="detaje">Per me shum detaje, na kontaktoni</p>
 
-      <form action="https://formspree.io/f/xwkydwdv"
-  method="POST">
-
-        <input type="text" name="Name" class="inputi" id='name' placeholder="Name"></input>
-        
-        <input type="email" name="email" class="inputi" id='email' placeholder="E-mail"></input>
-        
-        <input type="tel" name="telefon" class="inputi" id='phone' placeholder='Telephone'></input>
-        
-        <textarea name='message'
-         required
-         placeholder='Message' class="text-area" id='service'>
-        </textarea> 
-         
-         <input type="submit" class="submit" value="Send" onClick="gotowhatsapp()"></input>
-
-      </form>
-
+     
+    <ContactForm/>
 
       
 
