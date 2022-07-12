@@ -1,25 +1,32 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './jani.css';
 import { Link } from 'react-router-dom';
 import profileImage from './img/img5.jpg';
 import img41 from './img/img41.jpg';
-import { useForm, ValidationError } from '@formspree/react';
-
-
-
-function ContactForm() {
-    const [state, handleSubmit] = useForm("xwkydwdv");
-    if (state.succeeded) {
-        return <form>
-            <p class="thanks">Do ju kontaktojme se shpejti. Faleminderit</p>
-            </form>;
-    };
-
+import emailjs from '@emailjs/browser';
 
   
 
 
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+  const Result =() => {
+    return(
+
+        <p>Faleminderit. Do ju kontaktojme se shpejti</p>
+    )
+  }
 
        
         
@@ -28,46 +35,11 @@ function ContactForm() {
         
 
 
-return(
-
-
-
-<form onSubmit={handleSubmit}>
-
-<input type="text" required name="Name" class="inputi" id='name' placeholder="Name"></input>
-
-<input type="email" required name="email" class="inputi" id='email' placeholder="E-mail"></input>
-
-<ValidationError 
-        prefix="Email" 
-        field="email"
-        errors={state.errors}/>
-
-<input type="tel" required name="telefon" class="inputi" id='phone' placeholder='Telephone'></input>
 
 
 
 
-<textarea name='message'
- required
- placeholder='Message' class="text-area" id='service'>
-</textarea> 
 
-<ValidationError 
-        prefix="Message" 
-        field="message"
-        errors={state.errors}
-      />
- 
- <input type="submit" class="submit" value="Send"></input>
- 
-
-</form>
-
-
-
-
-)}
 
 
 
@@ -76,8 +48,24 @@ return(
 
 function Kontakt(){
 
+    const [result, showResult] = useState(false);
 
 
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_7ogxpek', 'template_bjxhb3e', form.current, 'g94ocXSv_zqCoeaWj')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+
+        e.target.reset();
+        showResult(true);
+    };
 
 
 
@@ -165,8 +153,41 @@ function Kontakt(){
 
       <p class="detaje">Per me shum detaje, na kontaktoni</p>
 
+
+      
+      <form ref={form} onSubmit={sendEmail}>
+
+      <div class="row">{result ? <Result/> : null}</div>
+
+<input type="text" required name="name" class="inputi" id='name' placeholder="Name"></input>
+
+<input type="email" required name="email" class="inputi" id='email' placeholder="E-mail"></input>
+
+
+
+<input type="tel" required name="phone" class="inputi" id='phone' placeholder='Telephone'></input>
+
+
+
+
+<textarea name='message'
+ required
+ placeholder='Message' class="text-area" id='service'>
+</textarea> 
+
+
+
+ 
+ <input type="submit" class="submit" value="Send"></input>
+
+
+ 
+
+</form>
+    
+
+
      
-    <ContactForm/>
 
       
 

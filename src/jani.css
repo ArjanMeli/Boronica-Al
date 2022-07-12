@@ -1862,10 +1862,26 @@ form{
 
 .thanks{
 
-  color: rgb(4, 253, 4);
-  font-size: 1rem;
+  color: rgb(7, 48, 7);
+  font-size: 1.2rem;
 }
 
+
+
+.sub{
+
+    height: 10rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+
+    color: rgb(9, 99, 41);
+    padding: 1rem;
+    font-size: 1.3rem;
+}
 
 
 
