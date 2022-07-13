@@ -21,7 +21,7 @@ import emailjs from '@emailjs/browser';
 
 
 
-  const Result =() => {
+const Result =() => {
     return(
 
         <p>Faleminderit. Do ju kontaktojme se shpejti</p>
@@ -159,13 +159,13 @@ function Kontakt(){
 
       <div class="row">{result ? <Result/> : null}</div>
 
-<input type="text" required name="name" class="inputi" id='name' placeholder="Name"></input>
+<input type="text" required name="name" class="inputin" id='name' placeholder="Name"></input>
 
-<input type="email" required name="email" class="inputi" id='email' placeholder="E-mail"></input>
+<input type="email" required name="email" class="inputin" id='email' placeholder="E-mail"></input>
 
 
 
-<input type="tel" required name="phone" class="inputi" id='phone' placeholder='Telephone'></input>
+<input type="tel" required name="phone" class="inputin" id='phone' placeholder='Telephone'></input>
 
 
 

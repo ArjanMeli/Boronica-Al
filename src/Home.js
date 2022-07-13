@@ -239,7 +239,7 @@ function Home() {
  {mut && (
    <div class="inputi">
  
-       <input type="text" name="text" class="text1" placeholder="Type and hit enter..." onChange={e => setQuery(e.target.value)}></input>
+       <input type="text" name="texti" class="text1" placeholder="Type and hit enter..." onChange={e => setQuery(e.target.value)}></input>
  
  
    </div>
